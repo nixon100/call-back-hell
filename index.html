@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+h2 {
+    display: block;
+    font-size: 10em;
+    
+}
+.num {
+
+    color: #308d46;
+	opacity: 0;
+	
+}
+.animation { 
+    opacity: 1;
+}
+
+* {
+	padding: none;
+	margin: none;
+	box-sizing: border-box;
+}
+.letter {
+    color: #308d46;
+	font-size: 10rem;
+	transition: all .5s ease-in;
+	margin: 0 5px;
+	transform: translateY(0.8rem);
+	opacity: 0;
+	}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 95vw;
+	height: 95vh;
+	}
+.container {
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	}
+.animate {
+	opacity: 1;
+	transform: translateY(0);
+	}
+ </style>
+</head>
+<body>
+    <div class="countdown">
+        <h2 class="num">10</h2>
+   </div>
+    <div class="container">
+        <p class="letter">Happy Independence Day</p>
+
+    </div>
+	<script src="script.js"></script>
+    
+</body>
+</html>
